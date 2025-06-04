@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite database files
+*.sqlite3
+*.db
+
+# PDF reports (if generated at runtime)
+*.pdf
+
+# Logs
+*.log
+
+# Environment
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# MacOS metadata
+.DS_Store
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# Virtual environment folders
+*.egg-info/
+.eggs/
+
+# Tkinter doesn't generate special files, so no need for extra rules
+
+# VSCode or IDE config folders
+.vscode/
+.idea/
+
+# Jupyter notebooks (if any, just in case)
+*.ipynb_checkpoints
