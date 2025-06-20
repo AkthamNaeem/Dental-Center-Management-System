@@ -1,6 +1,4 @@
-from pathlib import Path
 
-SCHEMA_SQL = """
 -- Doctors Table
 CREATE TABLE IF NOT EXISTS doctors (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -53,13 +51,3 @@ CREATE TABLE IF NOT EXISTS payments (
     notes TEXT,
     FOREIGN KEY (record_id) REFERENCES records(id)
 );
-"""
-
-
-def create_schema():
-    schema_path = Path(__file__).parent / "schema.sql"
-    with open(schema_path, "w") as f:
-        f.write(SCHEMA_SQL)
-
-    from .connection import init_db
-    init_db()
